@@ -27,6 +27,7 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     // 禁止var
     'no-var': 2,
     // 禁止with

@@ -60,8 +60,8 @@ const useTailwind = fs.existsSync(path.join(paths.appPath, 'tailwind.config.js')
 const swSrc = paths.swSrc;
 
 // style files regexes
-const cssRegex = /\.css$/;
-const cssModuleRegex = /\.module\.css$/;
+const cssRegex = /\.(css|less)$/;
+const cssModuleRegex = /\.module\.(css|less)$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
@@ -109,6 +109,9 @@ module.exports = function (webpackEnv) {
       {
         loader: require.resolve('css-loader'),
         options: cssOptions,
+      },
+      {
+        loader: require.resolve('less-loader'),
       },
       {
         // Options for PostCSS as we reference these options twice
