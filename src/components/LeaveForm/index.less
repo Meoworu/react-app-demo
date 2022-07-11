@@ -1,0 +1,39 @@
+.leave {
+  position: relative;
+  &-title {
+    font-weight: 600;
+    font-size: 54px;
+    color: #68686b;
+    line-height: 60px;
+    margin-top: 340px;
+  }
+  &-content {
+    margin-top: 80px;
+    & > div {
+      margin-bottom: 34px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .type {
+      font-weight: 400;
+      font-size: 30px;
+      color: #cacaca;
+      line-height: 30px;
+      transition: 0.3s;
+      &.active {
+        font-weight: 400;
+        font-size: 30px;
+        color: #68686b;
+        line-height: 30px;
+      }
+    }
+
+    .value {
+      font-weight: 400;
+      font-size: 30px;
+      color: #3884e2;
+      line-height: 30px;
+      margin-left: 30px;
+    }
+  }
+}
